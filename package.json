@@ -1,8 +1,14 @@
 {
   "name": "anthem-javelin-builder",
   "version": "0.1.0",
+  "homepage": "https://tomcorke.github.io/anthem-javelin-builder",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
@@ -12,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,7 +32,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/react": "^16.8.6",
-    "@types/react-dom": "^16.8.2"
+    "@types/classnames": "^2.2.7",
+    "@types/jest": "^24.0.9"
   }
 }
